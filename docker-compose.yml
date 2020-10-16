@@ -1,0 +1,22 @@
+version: "3.8"
+services:
+  web:
+    build: .
+    ports:
+      - "8081:80"
+    volumes:
+      - ./src:/var/www/html
+  redis:
+    image: "redis:alpine"
+  db:
+    image: mysql
+    container_name: mysql_docker
+    environment:
+       MYSQL_ROOT_PASSWORD: 12345
+       MYSQL_DATABASE: docker_db
+    volumes:
+      - ./db_data:/var/lib/mysql
+    ports:
+      - "3307:3306"
+
+
