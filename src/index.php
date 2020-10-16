@@ -1,6 +1,6 @@
 <?php
 
-echo 'index file <br />';
+echo 'index file <br>';
 
 $servername = "mysql_docker";
 $username = "root";
