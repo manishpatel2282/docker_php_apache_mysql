@@ -1,0 +1,3 @@
+[submodule "src/www/laravel"]
+	path = src/www/laravel
+	url = git@github.com:manishpatel2282/laravel-submodule.git
